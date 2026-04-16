@@ -1,4 +1,5 @@
 FROM eclipse-temurin:8-jdk-alpine
+
 MAINTAINER MithunTechnologies
 
 RUN apk update && apk add /bin/sh
@@ -11,4 +12,5 @@ COPY target/spring-boot-mongo-1.0.jar $PROJECT_HOME/spring-boot-mongo.jar
 WORKDIR $PROJECT_HOME
 
 EXPOSE 8080
-CMD ["java" ,"-jar","./spring-boot-mongo.jar"]
+
+CMD ["java", "-jar", "./spring-boot-mongo.jar"]
