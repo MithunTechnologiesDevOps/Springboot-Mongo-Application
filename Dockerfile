@@ -3,6 +3,7 @@ FROM eclipse-temurin:8-jdk-alpine
 MAINTAINER MithunTechnologies
 
 RUN apk update && apk add /bin/sh
+
 RUN mkdir -p /opt/application
 
 ENV PROJECT_HOME /opt/application
